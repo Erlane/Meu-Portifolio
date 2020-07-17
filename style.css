@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+  height: 100vh;
+}
+
+.SubContainer {
+  width: 100%;
+  background-color: #b557ad;
+  box-shadow: 0px 4px 6px rgba(0,0,0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 648px) {
+  .SubContainer{
+    padding: 1rem 1rem;
+    flex-flow: wrap;
+    position: absolute;
+  }
+}
+
+.SubContainerImage {
+  width: 15vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 0.95rem;
+  cursor: pointer;
+}
+
+@media (max-width: 648px) {
+  ul {
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+li {
+  font-size: 1.3rem;
+  padding-left: 3rem;
+}
+
+@media (max-width: 648px) {
+  li {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+
+li:hover {
+  font-size: 1.34rem;
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #848484;
+}
+
+.Content {
+  background-color: #b557ad66;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+
+.SubContainerImageMobile {
+  width: 15vw;
+}
+
+@media (max-width: 648px) {
+  .SubContainerImageMobile {
+    width: 35vw;
+  }
+}
+
+button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #9A2EFE;
+  border: none;
+  border-radius: 3px;
+  padding: 0.4rem 0.3rem 0.4rem;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 648px) {
+  button {
+    display: flex;
+  }
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.ContentImage {
+  width: 20vw;
+  border-radius: 20px;
+}
+
+@media (max-width: 648px) {
+  .ContentImage {
+    width: 40vw;
+  }
+}
+
+h1 {
+  color: #FFFFFF;
+  margin: 2rem 0;
+}
+
+.ContentAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  width: 90%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.ContentHeaderBox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.ContentHeaderImage {
+  color: pink;
+  font-size: 2rem;
+}
+
+.ContentHeader {
+  width: 50%;
+  height: 1vh;
+  background-color: #ffffff;
+}
+
+.fa-heart {
+  font-size: 2rem;
+  margin: 0 2rem;
+  color: #FFFFFF;
+}
+
+.far fa-heart {
+  font-size: 2rem;
+  margin: 0 2rem;
+  color: palevioletred;
+}
+
+.ContentParagraph {
+  margin-bottom: 2rem;
+}
+
+.ContentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+h2 {
+  color: #380B61;
+  font-size: 2rem;
+}
+
+.ContentHeaderColor {
+  width: 50%;
+  height: 1vh;
+  background-color: #6E6E6E;
+}
+
+.fa-star {
+  color: #D8D8D8;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.ContainerBox {
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box {
+  width: 25vw;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+
+@media (max-width: 648px) {
+  .Box {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.BoxMore {
+  width: 90%;
+  height: 99%;
+  background-color: rgba(26,188,156,.9);
+  display: flex;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.BoxMore:hover {
+  opacity: 1;
+}
+
+.images {
+  width: 90%;
+  border-radius: 5px;
+}
+
+figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-spa {
+  width: 100%;
+  font-size: 7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.FooterContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #58ACFA;
+  padding: 3rem 0;
+}
+
+.FooterPhone {
+  width: 45%;
+  text-align: center;
+  padding-bottom: 1rem;
+
+}
+
+.fa-phone-alt {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.FooterName {
+  width: 100%;
+}
+
+.FooterEmail {
+  text-align: center;
+}
+
+.fa-envelope {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.fa-wordpress, .fa-github {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.FooterLocation {
+  color: #FFFFFF;
+  padding-bottom: 0.8rem;
+}
+
+.FooterRede {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
